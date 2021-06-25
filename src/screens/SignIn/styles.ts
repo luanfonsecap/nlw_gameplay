@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: theme.colors.background,
+    backgroundColor: theme.colors.secondary90,
   },
   image: {
     width: "100%",
@@ -18,13 +18,13 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 50,
   },
   title: {
-    color: theme.colors.reading,
+    color: theme.colors.heading,
     textAlign: "center",
     fontSize: 40,
     marginBottom: 16,
   },
   subtitle: {
-    color: theme.colors.reading,
+    color: theme.colors.heading,
     fontSize: 15,
     textAlign: "center",
     marginBottom: 64,
