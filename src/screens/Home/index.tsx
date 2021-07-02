@@ -8,39 +8,12 @@ import { Appointment } from '../../components/Appointment';
 import { ListDivider } from '../../components/ListDivider';
 import { Background } from '../../components/Background';
 
+import { appointments } from '../../utils/mocks/appointments';
+
 import { styles } from './styles';
 
 function Home() {
 	const [category, setCategory] = useState('');
-
-	const appointments = [
-		{
-			id: '1',
-			guild: {
-				id: '1',
-				name: 'Lendários',
-				icon: null,
-				owner: true,
-			},
-			category: '1',
-			date: '26/06 ás 20:40h',
-			description:
-				'É hoje que vamos chegar ao challenger sem perder uma partida da md10',
-		},
-		{
-			id: '2',
-			guild: {
-				id: '1',
-				name: 'Lendários',
-				icon: null,
-				owner: true,
-			},
-			category: '1',
-			date: '26/06 ás 20:40h',
-			description:
-				'É hoje que vamos chegar ao challenger sem perder uma partida da md10',
-		},
-	];
 
 	const handleSelectCategory = (categoryId: string) => {
 		categoryId === category ? setCategory('') : setCategory(categoryId);
