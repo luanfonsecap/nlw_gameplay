@@ -3,10 +3,14 @@ import { View, FlatList } from 'react-native';
 
 import { guilds } from '../../utils/mocks/guilds';
 
-import { Guild } from '../Guild';
-import { ListDivider } from '../ListDivider';
+import { Guild, GuildProps } from '../../components/Guild';
+import { ListDivider } from '../../components/ListDivider';
 
 import { styles } from './styles';
+
+type Props = {
+	handleSelectGuild: (guild: GuildProps) => void;
+};
 
 function Guilds() {
 	return (
