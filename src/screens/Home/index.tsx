@@ -50,6 +50,7 @@ function Home() {
 					showsHorizontalScrollIndicator={false}
 					style={styles.matches}
 					ItemSeparatorComponent={() => <ListDivider />}
+					contentContainerStyle={{ paddingBottom: 30 }}
 				/>
 			</View>
 		</Background>
