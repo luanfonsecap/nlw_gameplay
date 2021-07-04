@@ -12,13 +12,15 @@ type Props = {
 	handleSelectGuild: (guild: GuildProps) => void;
 };
 
-function Guilds() {
+function Guilds({ handleSelectGuild }: Props) {
 	return (
 		<View style={styles.container}>
 			<FlatList
 				data={guilds}
 				keyExtractor={(item) => item.id}
-				renderItem={({ item }) => <Guild data={item} />}
+				renderItem={({ item }) => (
+					<Guild onPress={() => handleSelectGuild(item)} data={item} />
+				)}
 				showsVerticalScrollIndicator={false}
 				ItemSeparatorComponent={() => <ListDivider />}
 				style={styles.guilds}
