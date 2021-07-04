@@ -26,6 +26,10 @@ function Home() {
 		navigation.navigate('AppointmentCreate');
 	};
 
+	const handleAppointmentDetails = () => {
+		navigation.navigate('AppointmentDetails');
+	};
+
 	return (
 		<Background>
 			<View style={styles.container}>
@@ -46,7 +50,9 @@ function Home() {
 				<FlatList
 					data={appointments}
 					keyExtractor={(item) => item.id}
-					renderItem={({ item }) => <Appointment data={item} />}
+					renderItem={({ item }) => (
+						<Appointment data={item} onPress={handleAppointmentDetails} />
+					)}
 					showsHorizontalScrollIndicator={false}
 					style={styles.matches}
 					ItemSeparatorComponent={() => <ListDivider />}
