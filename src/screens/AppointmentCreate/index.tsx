@@ -90,7 +90,9 @@ function AppointmentCreate() {
 
 					<View style={styles.field}>
 						<View>
-							<Text style={styles.label}>Dia e mês</Text>
+							<Text style={[styles.label, { marginBottom: 12 }]}>
+								Dia e mês
+							</Text>
 
 							<View style={styles.column}>
 								<SmallInput maxLength={2} />
@@ -100,7 +102,9 @@ function AppointmentCreate() {
 						</View>
 
 						<View>
-							<Text style={styles.label}>Hora e minuto</Text>
+							<Text style={[styles.label, { marginBottom: 12 }]}>
+								Hora e minuto
+							</Text>
 
 							<View style={styles.column}>
 								<SmallInput maxLength={2} />
