@@ -37,7 +37,7 @@ type AuthorizationResponse = AuthSession.AuthSessionResult & {
 
 export const AuthContext = createContext({} as AuthContextData);
 
-function AUthProvider({ children }: AUthProviderProps) {
+function AuthProvider({ children }: AUthProviderProps) {
 	const [user, setUser] = useState({} as User);
 	const [loading, setLoading] = useState(false);
 
@@ -87,4 +87,4 @@ function useAuth() {
 	return context;
 }
 
-export { AUthProvider, useAuth };
+export { AuthProvider, useAuth };
