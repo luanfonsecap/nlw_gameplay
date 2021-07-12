@@ -9,7 +9,7 @@ import { theme } from '../global/styles/theme';
 
 const { Navigator, Screen } = createStackNavigator();
 
-function AuthRoutes() {
+function AppRoutes() {
 	return (
 		<Navigator
 			headerMode="none"
@@ -25,4 +25,4 @@ function AuthRoutes() {
 	);
 }
 
-export { AuthRoutes };
+export { AppRoutes };
